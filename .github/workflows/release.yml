@@ -5,14 +5,14 @@ on:
     branches:
       - main
 
-concurrency ${{ github.workflow }}-${{ github.ref }}
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
-     - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node.js
