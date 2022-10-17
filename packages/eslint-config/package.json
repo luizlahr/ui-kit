@@ -1,8 +1,9 @@
 {
   "name": "@luizlahr-ui/eslint-config",
-  "private": true,
+  "private": false,
   "main": "index.js",
   "license": "MIT",
+  "version": "1.0.0",  
   "devDependencies": {
     "eslint": "^8.25.0"
   },
