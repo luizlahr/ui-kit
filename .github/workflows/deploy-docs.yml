@@ -18,11 +18,11 @@ jobs:
           node-version: 16
 
       - run: npm ci
+        
+      - run: npm run build
         env:
           - TURBO_TOKEN: ErpMijKVjUvcSFJR0kgvUhd8
           - TURBO_TEAM: MyOwn
-
-      - run: npm run build
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
