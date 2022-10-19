@@ -1,5 +1,14 @@
 # @luizlahr-ui/react
 
+## 1.1.1
+
+### Patch Changes
+
+- - Add FormControl component
+  - Add isInvalid props to TextInput
+- Updated dependencies
+  - @luizlahr-ui/tokens@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
