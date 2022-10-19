@@ -4,10 +4,11 @@ import { TextInputProps } from './TextInput.types'
 
 export const TextInput = ({
   prefix,
+  isInvalid,
   ...props
 }: TextInputProps): ReactElement => {
   return (
-    <TextInputContainer>
+    <TextInputContainer isInvalid={!!isInvalid}>
       {!!prefix && <Prefix>{prefix}</Prefix>}
       <Input {...props} />
     </TextInputContainer>
