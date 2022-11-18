@@ -1,4 +1,4 @@
 import { ComponentProps } from '../../types/ComponentProps'
-import { Grid } from './Grid'
+import { GridContainer } from './Grid.styles'
 
-export type GridProps = ComponentProps<typeof Grid>
+export type GridProps = ComponentProps<typeof GridContainer>

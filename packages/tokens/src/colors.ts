@@ -3,15 +3,15 @@ import {
   blue,
   green,
   orange,
+  amber,
   red,
   teal,
   whiteA,
 } from '@radix-ui/colors'
+import { renameRadixColor } from './helpers/radix'
 import { semanticColors } from './semanticColors'
 
-console.log(semanticColors)
-
-export const colors = {
+export const colors: Record<string, string> = {
   white: '#FFFFFF',
   black: '#000000',
 
@@ -29,6 +29,7 @@ export const colors = {
   ...blackA,
   ...whiteA,
   ...orange,
+  ...renameRadixColor('yellow', amber),
   ...blackA,
   ...teal,
   ...green,
@@ -37,5 +38,3 @@ export const colors = {
 
   ...semanticColors,
 } as const
-
-console.log(colors)

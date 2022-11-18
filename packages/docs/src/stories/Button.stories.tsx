@@ -3,13 +3,14 @@ import { Button, ButtonProps } from '@luizlahr-ui/react'
 import { Plus } from 'phosphor-react'
 
 export default {
-  title: 'Data Display/Button',
+  title: 'Form/Button',
   component: Button,
   args: {
     children: 'This is a Button',
     variant: 'primary',
     size: 'md',
     disabled: false,
+    loading: false,
   },
   argTypes: {
     onClick: {
@@ -19,7 +20,7 @@ export default {
       control: {
         type: 'inline-radio',
       },
-      options: ['default', 'primary', 'link'],
+      options: ['default', 'primary', 'danger'],
     },
     size: {
       control: {
@@ -27,7 +28,11 @@ export default {
       },
       options: ['sm', 'md', 'lg'],
     },
-
+    loading: {
+      control: {
+        type: 'boolean',
+      },
+    },
     disabled: {
       control: {
         type: 'boolean',
@@ -45,12 +50,6 @@ export const Default: StoryObj<ButtonProps> = {
 export const Primary: StoryObj<ButtonProps> = {
   args: {
     variant: 'primary',
-  },
-}
-
-export const Link: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'link',
   },
 }
 
@@ -80,5 +79,11 @@ export const WithIcon: StoryObj<ButtonProps> = {
         Button
       </>
     ),
+  },
+}
+
+export const Loading: StoryObj<ButtonProps> = {
+  args: {
+    loading: true,
   },
 }

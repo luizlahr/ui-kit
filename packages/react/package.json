@@ -27,9 +27,12 @@
     "@luizlahr-ui/tokens": "*",
     "@luizlahr-ui/ts-config": "*",
     "@mui/material": "^5.10.10",
+    "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-avatar": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-dialog": "^1.0.2",
     "@stitches/react": "^1.2.8",
-    "phosphor-react": "^1.4.1"
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.2.2"
   }
 }

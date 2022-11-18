@@ -48,3 +48,10 @@ export const WithPrefix: StoryObj<TextInputProps> = {
     placeholder: 'This is a TextInput with prefix',
   },
 }
+
+export const WithError: StoryObj<TextInputProps> = {
+  args: {
+    isInvalid: true,
+    placeholder: 'This is a TextInput with prefix',
+  },
+}

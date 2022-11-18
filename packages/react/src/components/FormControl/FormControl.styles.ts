@@ -7,7 +7,10 @@ export const FormControlContainer = styled('label', {
   gap: '$1',
 })
 
-export const Label = styled(Text, {})
+export const Label = styled(Text, {
+  fontWeight: '$regular',
+  color: '$input-default-label-color',
+})
 
 export const ErrorMessage = styled(Text, {
   color: '$red8',

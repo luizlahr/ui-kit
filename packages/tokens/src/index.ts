@@ -4,6 +4,7 @@ export * from './radii'
 export * from './space'
 
 export * from './zIndices'
+export * from './opacities'
 
 export * from './fonts'
 export * from './font-sizes'

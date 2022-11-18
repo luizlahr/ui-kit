@@ -7,6 +7,7 @@ import {
   media,
   radii,
   space,
+  opacities,
   zIndices,
 } from '@luizlahr-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
@@ -25,6 +26,7 @@ export const {
     ...defaultThemeMap,
     height: 'space',
     width: 'space',
+    opacity: 'opacities',
   },
   theme: {
     colors,
@@ -33,6 +35,7 @@ export const {
     fonts,
     lineHeights,
     media,
+    opacities,
     radii,
     space,
     zIndices,

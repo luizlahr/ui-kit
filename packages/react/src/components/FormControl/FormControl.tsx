@@ -10,7 +10,7 @@ export const FormControl = ({
 }: PropsWithChildren<FormControlProps>): ReactElement => {
   return (
     <FormControlContainer {...props}>
-      {!!label && <Label>{label}</Label>}
+      {!!label && <Label size="sm">{label}</Label>}
       {cloneElement(children as ReactElement, {
         isInvalid: !!errorMessage,
       })}
@@ -18,3 +18,5 @@ export const FormControl = ({
     </FormControlContainer>
   )
 }
+
+FormControl.displayName = 'FormControl'

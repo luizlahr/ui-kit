@@ -1,16 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Box, BoxProps } from '@luizlahr-ui/react'
+import type { Meta } from '@storybook/react'
+import { Box as BoxComponent, BoxProps } from '@luizlahr-ui/react'
 
 export default {
-  title: 'Surface/Box',
-  component: Box,
-  args: {
-    children: (
-      <>
-        <span>This is a Box</span>
-      </>
-    ),
+  title: 'Layout/Box',
+  component: BoxComponent,
+  parameters: {
+    backgrounds: {
+      values: [],
+    },
   },
 } as Meta<BoxProps>
 
-export const Default: StoryObj<BoxProps> = {}
+export const Box = (args: BoxProps) => (
+  <BoxComponent {...args}>
+    <span style={{ color: 'white' }}>This is a Box</span>
+  </BoxComponent>
+)

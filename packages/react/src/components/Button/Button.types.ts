@@ -1,4 +1,6 @@
 import { ComponentProps } from '../../types/ComponentProps'
-import { Button } from './Button'
+import { ButtonContainer } from './Button.styles'
 
-export type ButtonProps = ComponentProps<typeof Button>
+export type ButtonProps = ComponentProps<typeof ButtonContainer> & {
+  loading?: boolean
+}

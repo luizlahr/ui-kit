@@ -26,6 +26,13 @@ export const Default: StoryObj<TextAreaProps> = {
   },
 }
 
+export const WithError: StoryObj<TextAreaProps> = {
+  args: {
+    isInvalid: true,
+    placeholder: 'This is a Disabled TextArea',
+  },
+}
+
 export const Disabled: StoryObj<TextAreaProps> = {
   args: {
     disabled: true,

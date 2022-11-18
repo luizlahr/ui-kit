@@ -27,6 +27,20 @@ export const TextArea = styled('textarea', {
   '&:placeholder': {
     color: '$grey4',
   },
+
+  variants: {
+    isInvalid: {
+      true: {
+        '&:not(:disabled)': {
+          borderColor: '$invalid-input-default-border-color',
+        },
+
+        '&:focus': {
+          borderColor: '$invalid-input-focus-border-color',
+        },
+      },
+    },
+  },
 })
 
 TextArea.displayName = 'TextArea'

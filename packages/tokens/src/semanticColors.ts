@@ -1,18 +1,17 @@
-import { teal } from '@radix-ui/colors'
-import { renameRadixColor } from './helpers/radix'
+import { basicColors } from './sematicColors/basicColors'
+import { boxColors } from './sematicColors/boxColors'
+import { inputColors } from './sematicColors/inputColors'
+import { overlaysColors } from './sematicColors/overlaysColors'
 
 export const semanticColors = {
-  ...renameRadixColor('primary', teal),
+  ...basicColors,
 
   // INPUT
-  'input-default-text-color': '$white',
-  'input-default-placeholder-color': '$grey4',
-  'input-default-background-color': '$grey9',
-  'input-default-border-color': '$grey9',
-  'input-focus-border-color': '$primary10',
+  ...inputColors,
 
-  'input-prefix-text-color': '$grey4',
+  // OVERLAYS
+  ...overlaysColors,
 
-  'invalid-input-default-border-color': '$red8',
-  'invalid-input-focus-border-color': '$red11',
+  // BOX
+  ...boxColors,
 } as const

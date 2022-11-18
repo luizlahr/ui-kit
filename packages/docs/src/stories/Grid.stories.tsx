@@ -1,9 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Grid, GridProps, Text } from '@luizlahr-ui/react'
+import { Box, Grid as GridComponent, GridProps, Text } from '@luizlahr-ui/react'
 
 export default {
-  title: 'Surface/Grid',
-  component: Grid,
+  title: 'Layout/Grid',
+  component: GridComponent,
+  decorators: [
+    (Story) => {
+      return (
+        <Box
+          css={{
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+        >
+          {Story()}
+        </Box>
+      )
+    },
+  ],
   argTypes: {
     container: {
       description: 'boolean',
@@ -22,63 +36,98 @@ export default {
   args: {
     children: (
       <>
-        <Grid xs={3}>
+        <GridComponent xs={3}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 1 (xs=3)
           </Text>
-        </Grid>
-        <Grid xs={3}>
+        </GridComponent>
+        <GridComponent xs={3}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 2 (xs=3)
           </Text>
-        </Grid>
-        <Grid xs={3}>
+        </GridComponent>
+        <GridComponent xs={3}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 3 (xs=3)
           </Text>
-        </Grid>
-        <Grid xs={3}>
+        </GridComponent>
+        <GridComponent xs={3}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 4 (xs=3)
           </Text>
-        </Grid>
-        <Grid xs={4}>
+        </GridComponent>
+        <GridComponent xs={4}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 5 (xs=4)
           </Text>
-        </Grid>
-        <Grid xs={4}>
+        </GridComponent>
+        <GridComponent xs={4}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 6 (xs=4)
           </Text>
-        </Grid>
-        <Grid xs={4}>
+        </GridComponent>
+        <GridComponent xs={4}>
           <Text
-            css={{ display: 'flex', width: '100%', justifyContent: 'center' }}
+            css={{
+              backgroundColor: '$grey4',
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
           >
             Col 7 (xs=4)
           </Text>
-        </Grid>
+        </GridComponent>
       </>
     ),
   },
 } as Meta<GridProps>
 
-export const Default: StoryObj<GridProps> = {
+export const Grid: StoryObj<GridProps> = {
   args: {
     container: true,
-    spacing: [2, 4],
+    spacing: 2,
   },
 }

@@ -20,6 +20,11 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     border: '2px solid $primary10',
   },
 
+  '&:disabled': {
+    opacity: '0.5',
+    cursor: 'not-allowed',
+  },
+
   '&[data-state="checked"]': {
     background: '$primary10',
   },

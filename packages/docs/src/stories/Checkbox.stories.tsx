@@ -10,10 +10,12 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+          css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
         >
-          <Text>Input Label</Text>
           {Story()}
+          <Text size="sm" css={{ color: '$box-text-color' }}>
+            Input Label
+          </Text>
         </Box>
       )
     },
@@ -21,21 +23,24 @@ export default {
 } as Meta<CheckboxProps>
 
 export const Default: StoryObj<CheckboxProps> = {
+  args: {},
+}
+
+export const Checked: StoryObj<CheckboxProps> = {
   args: {
-    placeholder: 'This is a Checkbox',
+    checked: true,
   },
 }
 
 export const Disabled: StoryObj<CheckboxProps> = {
   args: {
     disabled: true,
-    placeholder: 'This is a Disabled Checkbox',
   },
 }
 
-export const WithPrefix: StoryObj<CheckboxProps> = {
+export const CheckedAndDisabled: StoryObj<CheckboxProps> = {
   args: {
-    prefix: 'luizlahr.com/',
-    placeholder: 'This is a Checkbox with prefix',
+    checked: true,
+    disabled: true,
   },
 }

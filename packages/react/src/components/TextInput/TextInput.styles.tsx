@@ -2,7 +2,8 @@ import { styled } from '../../styles'
 
 export const TextInputContainer = styled('div', {
   backgroundColor: '$input-default-background-color',
-  padding: '$3 $4',
+  padding: '0 $4',
+  height: '$10',
   borderRadius: '$sm',
   boxSizing: 'border-box',
   border: '2px solid $input-default-border-color',
@@ -48,6 +49,7 @@ export const Input = styled('input', {
   background: 'inherit',
   border: 0,
   width: '100%',
+  height: 'calc(100% - 2px)',
 
   '&:focus': {
     outline: 0,
