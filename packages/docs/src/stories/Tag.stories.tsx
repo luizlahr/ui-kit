@@ -17,7 +17,7 @@ export default {
       control: {
         type: 'inline-radio',
       },
-      options: ['default', 'primary', 'danger'],
+      options: ['default', 'primary', 'danger', 'info', 'warning'],
     },
     disabled: {
       control: {
