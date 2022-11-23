@@ -29,10 +29,10 @@
     "vite": "^3.1.7"
   },
   "dependencies": {
-    "@luizlahr-ui/eslint-config": "^1.0.1",
-    "@luizlahr-ui/react": "^1.1.1",
-    "@luizlahr-ui/tokens": "^1.1.1",
-    "@luizlahr-ui/ts-config": "^1.0.1",
+    "@luizlahr-ui/eslint-config": "^2.0.0",
+    "@luizlahr-ui/react": "^2.0.0",
+    "@luizlahr-ui/tokens": "^2.0.0",
+    "@luizlahr-ui/ts-config": "^2.0.0",
     "@storybook/addon-a11y": "^6.5.13",
     "@storybook/addon-storysource": "^6.5.13",
     "phosphor-react": "^1.4.1",

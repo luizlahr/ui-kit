@@ -1,5 +1,18 @@
 # @luizlahr-ui/react
 
+## 2.0.0
+
+### Major Changes
+
+- test
+
+### Patch Changes
+
+- Updated dependencies
+  - @luizlahr-ui/ts-config@2.0.0
+  - @luizlahr-ui/eslint-config@2.0.0
+  - @luizlahr-ui/tokens@2.0.0
+
 ## 1.1.1
 
 ### Patch Changes
